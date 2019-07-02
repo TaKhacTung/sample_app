@@ -1,0 +1,6 @@
+vn:
+  static_pages:
+    home:
+        hello : "Xin chào"
+        time_defaut: "%d/%m/%y"  
+        to : "Chuyển dẫn"

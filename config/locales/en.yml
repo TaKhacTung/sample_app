@@ -1,0 +1,10 @@
+
+
+en:
+  static_pages:
+    home:
+      titile: "sample_app"
+      hello: "Hello world"
+      time_defaut : "%y/%m/%d"
+      to : "Link to"
+      
