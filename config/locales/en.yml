@@ -1,0 +1,7 @@
+en:
+  static_pages:
+    home:
+      hello: "Hello world"
+      time_defaut : "%y/%m/%d"
+      to : "Link to"
+      
