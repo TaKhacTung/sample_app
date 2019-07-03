@@ -1,24 +1,20 @@
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+  <h1>StaticPages#home</h1>
+  <p>Find me in app/views/static_pages/home.html.erb</p>
+  <%= t ".hello" %>
+  <a href="static_pages/help"><%= t ".to" %> </a>
+  <%= link_to "English", locale:"en" %>
+  <%= link_to "Vietnamese", locale:"vi" %>
+  <%= Time.now.strftime(t(".time_defaut")) %>
+  <h2>
+    This is the home page for the
+    <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
 
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
-  </head>
-
-  <body>
-        
-            <h1>StaticPages#home</h1>
-            <p>Find me in app/views/static_pages/home.html.erb</p>
-            <%= t ".hello" %>
-            <a href="static_pages/help"><%= t ".to" %> </a>
-            <%= link_to "English", locale:"en" %>
-            <%= link_to "Vietnamese", locale:"vi" %>
-            <%= Time.now.strftime(t(".time_defaut")) %>
-                <%= yield %>
-            </body>
-</html>
+ <%= link_to image_tag("a.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>    
