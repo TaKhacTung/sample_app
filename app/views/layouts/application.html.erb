@@ -11,11 +11,13 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
   </script>
 <![endif]-->
+    <%= render 'layouts/shim' %>
   </head>
 
   <body>
      <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
+    <%= render 'layouts/header' %>
       <div class="container">
         <%= link_to "sample app", '#', id: "logo" %>
         <nav>
