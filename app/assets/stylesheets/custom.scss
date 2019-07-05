@@ -58,6 +58,26 @@ body {
     font-size: 1.1em;
     line-height: 1.7em;
   }
-  img {
-    display: none;
+  footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #222;
+    a {
+      color:#777;
+      &:hover {
+        color: #222;
+      }
+    }
+    small {
+      float: left;
+    }
+    ul {
+      float: right;
+      list-style: none;
+      li {
+        float: left;
+        margin-left: 15px;
+      }
+    }
   }

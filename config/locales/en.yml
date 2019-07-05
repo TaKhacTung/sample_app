@@ -4,4 +4,5 @@ en:
       hello: "Hello world"
       time_defaut : "%y/%m/%d"
       to : "Link to"
-      
+      name : "Find me"
+      welcome : "Welcome to the Sample App"
