@@ -36,6 +36,11 @@ en:
       hone: "Home"
       help: "Help"
       login: "Login"
+      user: "Users"
+      account: "Account "
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
     footer:
       content_1: "The <a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a>"
       content_2: "by <a href=\"http://www.michaelhartl.com/\">Michael Hartl</a>"
@@ -50,6 +55,8 @@ en:
       des: "This will be a signup page for new users."
       btn_submit: "Create my account"
       error: "shared/error_messages"
+    show:
+      not_exits: "User not exitst"  
   shared:
     error_messages:
       form_error: "The form contains "
@@ -78,3 +85,12 @@ en:
             password_confirmation:
               blank: "can't be blank!"
               confirmation: "doesn't match Password!"
+  sessions:
+    new:
+      invalid_user: "Invalid email/password combination!"
+      title: "Log in"
+      new_user: "New user?"
+      email: "Email"
+      password: "Password"
+      signup: "Sign up now!"
+
