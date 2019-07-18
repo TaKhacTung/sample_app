@@ -22,5 +22,6 @@ module SampleApp
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :vi
     config.generators.system_tests = nil
+    config.time_zone = Settings.time_zone
   end
 end
