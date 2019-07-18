@@ -4,6 +4,7 @@ en:
     vi: "VietNamese"
   common:
     title: " | Ruby on Rails Tutorial Sample App"
+    base_title: "Ruby on Rails Tutorial"  
   static_pages:
     home:
       title: "Home"

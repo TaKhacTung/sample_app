@@ -4,6 +4,7 @@ vi:
     vi: "Tiếng Việt"
   common:
     title: " | Ứng dụng mẫu Ruby on Rails "
+    base_title: "Ruby on Rails Tutorial"  
   static_pages:
     home:
       title: "Trang chủ"
