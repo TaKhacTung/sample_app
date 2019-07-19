@@ -31,16 +31,21 @@ vi:
       contact_info_link: "<a href=\"https://www.railstutorial.org/contact\">trang liên hệ</a>."
   layouts:
     header:
-      logo: "sample app"
-      hone: "Home"
-      help: "Help"
-      login: "Login"
+      logo: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ gíup"
+      login: "Đăng nhập"
+      user: "Người dùng"
+      account: "Tài khoản "
+      profile: "Thông tin cá nhân"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
     footer:
       content_1: "The <a href=\"https://www.railstutorial.org/\">Ruby on Rails Tutorial</a>"
       content_2: "by <a href=\"http://www.michaelhartl.com/\">Michael Hartl</a>"
-      about: "About"
-      contact: "Contact"
-      news: "News"
+      about: "Thông tin"
+      contact: "Liên lạc"
+      news: "Tin tức"
       en: "English"
       vi: "Vietnamese"
   users:
@@ -49,6 +54,8 @@ vi:
       des: "Đây sẽ là một trang đăng ký cho người dùng mới."
       btn_submit: "Tạo tài khoản của tôi"
       error: "shared/error_messages"
+    show:
+      not_exits: "Tài khoản không tồn tại"  
   shared:
     error_messages:
       form_error: "Biểu mẫu này chứa "
@@ -76,4 +83,12 @@ vi:
               too_short: "quá ngắn, tối thiểu 6 ký tự!"
             password_confirmation:
               blank: "không được để trống!"
-              confirmation: "không khớp!"     
+              confirmation: "không khớp!"  
+  sessions:
+    new:
+      invalid_user: "Thông tin đăng nhập không chính xác!"
+      title: "Đăng nhập"
+      new_user: "Tạo tài khoản mới?"
+      email: "Địa chỉ thư"
+      password: "Mật khẩu"
+      signup: "Đăng ký ngay"               
