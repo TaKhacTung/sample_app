@@ -45,5 +45,35 @@ vi:
       vi: "Vietnamese"
   users:
     new:
-      title: "Sign up!"
-      des: "This will be a signup page for new users."
+      title: "Đăng ký"
+      des: "Đây sẽ là một trang đăng ký cho người dùng mới."
+      btn_submit: "Tạo tài khoản của tôi"
+      error: "shared/error_messages"
+  shared:
+    error_messages:
+      form_error: "Biểu mẫu này chứa "
+      error: "lỗi"
+  activerecord:
+    attributes:
+      user:
+        name: "Họ tên"
+        email: "Địa chỉ thư"
+        password: "Mật khẩu"
+        password_confirmation: "Nhập lại mật khẩu"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống!"
+              too_long: "quá dài!"
+            email:
+              blank: "không được để trống!"
+              too_long: "quá dài!"
+              invalid: "không đúng định dạng!"
+            password:
+              blank: "không được để trống!"
+              too_short: "quá ngắn, tối thiểu 6 ký tự!"
+            password_confirmation:
+              blank: "không được để trống!"
+              confirmation: "không khớp!"     
