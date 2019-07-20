@@ -91,4 +91,5 @@ vi:
       new_user: "Tạo tài khoản mới?"
       email: "Địa chỉ thư"
       password: "Mật khẩu"
-      signup: "Đăng ký ngay"               
+      signup: "Đăng ký ngay"
+      remember_me: "Ghi nhớ trên máy tính này"
