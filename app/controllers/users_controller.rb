@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all.page(params[:page]).per Settings.paginate
   end
+
   def new
     @user = User.new
   end
@@ -79,7 +80,7 @@ class UsersController < ApplicationController
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
-      flash[:danger] = t("controllers.user.not_exits") 
-      redirect_to root_path  
-    end  
+    flash[:danger] = t("controllers.user.not_exits")
+    redirect_to root_path
+    end
 end
