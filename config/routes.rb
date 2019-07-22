@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get "sessions/new"
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
 
@@ -14,5 +13,10 @@ Rails.application.routes.draw do
     delete "/logout",  to: "sessions#destroy"
     resources :sessions, only: %i(new create)
     resources :users
+    concern :paginatable do
+      get "(page/:page)", action: :index, on: :collection, as: ""
+    end
+  
+    resources :products, concerns: :paginatable
   end
 end

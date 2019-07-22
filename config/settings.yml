@@ -3,4 +3,10 @@ validation:
   max_length: 255
   name_length: 50
   passw_minl: 6
-gravatar_size: 80
+paginate: 10
+helper:
+  size_gravatar: 80
+user:
+  size_gravatar: 50
+users:
+  thumb_size: 50

@@ -1,4 +1,5 @@
 vi:
+  require_login: "Đăng nhập"
   language:
     en: "Tiếng Anh"
     vi: "Tiếng Việt"
@@ -55,7 +56,15 @@ vi:
       btn_submit: "Tạo tài khoản của tôi"
       error: "shared/error_messages"
     show:
-      not_exits: "Tài khoản không tồn tại"  
+      not_exits: "Tài khoản không tồn tại"
+    edit:
+      button_text: "Cập nhập"
+      title: "Chỉnh sửa"
+    index:
+      title: "Người dùng"
+    user:
+      delete: "Xoá"
+      sure: "Bạn chắc chắn chứ"
   shared:
     error_messages:
       form_error: "Biểu mẫu này chứa "
@@ -93,3 +102,9 @@ vi:
       password: "Mật khẩu"
       signup: "Đăng ký ngay"
       remember_me: "Ghi nhớ trên máy tính này"
+  controllers:
+    user:
+        success: "Cập nhập thành công"
+        fail : "Cập nhập không thành công mời thử lại"
+        delete_er: "Xóa không thành công"
+        delete_s: "Xóa thành công"

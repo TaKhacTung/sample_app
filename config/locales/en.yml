@@ -1,4 +1,5 @@
 en:
+  require_login: "Sign in"
   language:
     en: "English"
     vi: "VietNamese"
@@ -56,11 +57,19 @@ en:
       btn_submit: "Create my account"
       error: "shared/error_messages"
     show:
-      not_exits: "User not exitst"  
+      not_exits: "User not exitst"
+    edit:
+      button_text: "Update"
+      title: "Edit"
+    index:
+      title: "User" 
+    user:
+      delete: "Delete"
+      sure: "Are you sure" 
   shared:
     error_messages:
       form_error: "The form contains "
-      error: "error"
+      error: "error"    
   activerecord:
     attributes:
       user:
@@ -94,3 +103,9 @@ en:
       password: "Password"
       signup: "Sign up now!"
       remember_me: "Remember on this computer"
+  controllers:
+    user:
+        success: "Update successful"
+        fail : "Update not successful please try agian"
+        delete_s: "Delete complete"
+        delete_er: "Delete not complete"

@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
-
+  attr_accessor :remember_token
   validates :name, presence: true,
                   length: {maximum: Settings.validation.name_length}
   validates :email, presence: true,
@@ -8,7 +8,8 @@ class User < ApplicationRecord
                     format: {with: VALID_EMAIL_REGEX},
                     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-                       length: {minimum: Settings.validation.passw_minl}
+                      length: {minimum: Settings.validation.passw_minl},
+                      allow_nil: true
 
   before_save{email.downcase!}
 
@@ -21,7 +22,7 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attributes remember_digest: nil
+    update_attribute :remember_digest, nil
   end
 
   def remember
@@ -29,7 +30,7 @@ class User < ApplicationRecord
     update_attribute :remember_digest, User.digest(remember_token)
   end
 
-   class << self
+  class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
                BCrypt::Engine::MIN_COST
